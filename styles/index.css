@@ -1,3 +1,4 @@
+/*body css properties*/
 body{
     background-image: url(file:///C:/Users/hp/Desktop/upg/project%20scribbler/images/background.jpg);
     background-repeat: no-repeat;
@@ -5,6 +6,7 @@ body{
     height: 100px;
 }
 
+/*sign-in and sign-up button*/
 #num1
 {
     display: flex;
@@ -17,6 +19,7 @@ h1{
     color: blue;
 }
 
+/*button styling*/
 .sign
 {
     height: 40px;
@@ -26,15 +29,41 @@ h1{
     margin: 5px;
 }
 
+/*post button styling*/
 #num2{
-    padding: 22.5%;
+    padding: 21%;
     margin-left: 300px;
 }
 
+/*post id css property*/
 .posts
 {
     padding: 10px;
-    width: 100px;
+    width: 120px;
     margin: 5px;
     background-color: orange;
+}
+
+/*sign-up button*/
+#sinup{
+    background-color: forestgreen;
+    width: 100%;
+}
+
+/*sign-in button*/
+#sinin{
+    background-color: forestgreen;
+    width: 100%;
+}
+
+/*background color of create button*/
+#creat{
+    background-color: forestgreen;
+}
+
+/* For whole create dialogue box */
+#modar{
+    margin: inherit;
+    margin-left: 23%;
+    margin-top: 4%;
 }

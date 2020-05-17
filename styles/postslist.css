@@ -1,0 +1,107 @@
+/*head section*/
+#num1
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: 'Montez', cursive;
+    margin: 0%;
+    color: blue;
+}
+
+/*sign button styles*/
+.sign
+{
+    height: 40px;
+    width: 100px;
+    background-color:blue;
+    color: white;
+    margin: 5px;
+}
+
+/*cards position*/
+.box{
+    width: 40%;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: none;
+}
+
+/*on mouseover appearing of shadow*/
+.box:hover{
+    box-shadow: 0 10px 10px pink;
+}
+ /*outside styling*/
+#outbox{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*name properties*/
+.name
+{
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+    border-top-left-radius: 7%;
+    border-bottom-left-radius: 7%;
+    display: flex;
+    align-items: center;
+}
+
+/*carde background*/
+.content{
+    background-color: mistyrose;
+    padding: 20px;
+    height: 100%;
+    border-top-right-radius: 7%;
+    border-bottom-right-radius: 7%;
+}
+
+/*icon position*/
+.icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*three dots position*/
+.ellipse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*on mouseover changes to pointer*/
+.fas.fa-trash:hover,
+.fas.fa-ellipsis-h:hover{
+    cursor: pointer;
+}
+
+/*three lines in one cars*/
+.lesslines{
+    height: 5rem;
+    line-height: 1.6rem;
+    overflow: hidden;
+}
+
+/*signup button color*/
+#sinup{
+    background-color: forestgreen;
+    width: 100%;
+}
+
+/*signin button color*/
+#sinin{
+    background-color: forestgreen;
+    width: 100%;
+}
+
+/*create button color*/
+#creat{
+    background-color: forestgreen;
+}

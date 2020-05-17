@@ -2,13 +2,18 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
 </head>
 
 <body>
+  <!--Header Section-->
     <span id="num1">
         <div>
             <h1>ScriBBler</h1>
@@ -16,16 +21,123 @@
         </div>
 
         <div id="sign id">
-            <button class="sign">Sign In</button>
-            <button class="sign">Sign Up</button>
+            <button class="sign" data-toggle="modal" data-target="#exampleModal">Sign In</button>
+            <button class="sign" data-toggle="modal" data-target="#exampleModalSignUp">Sign Up</button>
         </div>
         </span>
-
+        <!--Content area-->
     <div id="num2">
-        <button class="posts">All Posts</button>
-        <button class="posts">Create Post</button>
+      <a href="./html/postslist.html">
+        <button class="posts">All Posts</button></a>
+        <button class="posts" data-toggle="modal" data-target="#exmp">Create Post</button>
     </div>
-        <!-- TODO: Include all your code for the header and home page here -->
+
+    <!--Sign-in modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Welcome Back!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Username</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your username">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
+                            </div>
+                        
+                            <button type="submit" class="btn btn-primary" id="sinin" onclick="messag(exampleInputEmail1,exampleInputPassword1)">Sign In</button><br><br>
+                            <div style="text-align: center;">Not a member?<a href=""> Sign Up</a></div>
+                          </form>
+            </div>
+            <div class="modal-footer">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Sign-up modal-->
+      <div class="modal fade" id="exampleModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Get Started</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form>
+                            <div class="form-group">
+                                    <label for="exampleInputName1">Name</label>
+                                    <input type="email" class="form-control" id="exampleInputName1" aria-describedby="emailName" placeholder="Enter your name">
+                                  </div>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Username</label>
+                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your username">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
+                            </div>
+                            <div class="form-group">
+                                    <label for="exampleInputPassword1">Confirm Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Re-enter your password">
+                                  </div>
+                            <button type="submit" class="btn btn-primary" id="sinup">Sign Up</button>
+                          </form>
+            </div>
+            <div class="modal-footer">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--create-post modal-->
+      <div class="modal fade" id="exmp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" id="modar">
+          <div class="modal-content" style="width: 170%;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Pen Your Post</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Title</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title of your post">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Contents</label>
+                              <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Enter the contents of your post"></textarea>
+                              </div>
+                            </div>
+                            <div id="buttoncreate" style="text-align: -webkit-center;">
+                            <button type="button" class="btn btn-primary" id="creat" onclick="messag(exampleInputEmail1,exampleInputPassword1)">Create</button><br><br>
+                          </div>
+                          </form>
+            </div>
+            <div class="modal-footer">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="./scripts/index.js"></script>
+        <!-- Javascript added -->
 </body>
 
 </html>

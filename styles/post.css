@@ -1,0 +1,90 @@
+/*header positions*/
+#num1
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: 'Montez', cursive;
+    margin: 0%;
+    color: blue;
+}
+
+/*sign button stylings*/
+.sign
+{
+    height: 40px;
+    width: 100px;
+    background-color:blue;
+    color: white;
+    margin: 5px;
+}
+
+h4{
+    text-align: center;
+    margin: 15px;
+}
+
+/*head section stylings*/
+#head
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+/*Given the margin of the overall page*/
+#outbox{
+    margin-left: 13%;
+    margin-right: 15%;
+}
+
+/*button size*/
+#button{
+    padding: 5px;
+}
+
+/*edit section*/
+#edit{
+    border: none;
+    background-color: orangered;
+    padding: 5px;
+}
+
+/*paragraph section*/
+#para{
+    margin-top: 20px;
+}
+
+/*like button styles*/
+#likebutton{
+    background-color: orangered;
+    border: none;
+}
+
+/*dynamically created paragraph styles*/
+#newer{
+    border: groove;
+    border-color: gray;
+    box-shadow: 0 10px 15px gray;
+    padding: 10px;
+    width: 63.5%;
+}
+
+/*signup button color*/
+#sinup{
+    background-color: forestgreen;
+    width: 100%;
+}
+
+/*signin button color*/
+#sinin{
+    background-color: forestgreen;
+    width: 100%;
+}
+
+/*create button color*/
+#creat{
+    background-color: forestgreen;
+}
